@@ -18,7 +18,23 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 
 ## 💻 Program
 Add code here
+~~~
+import pandas as pd
+data1 = pd.DataFrame(eval(input()))
+data2 = pd.DataFrame(eval(input()))
+print("Original DataFrames:")
+print(data1)
+print("-------------------------------------")
+print(data2)
+result=pd.concat([data1,data2],axis=0)
+print("\nJoin the said two dataframes along rows:")
+print(result)
+~~~
 
 ## Output
 
+<img width="1193" height="812" alt="image" src="https://github.com/user-attachments/assets/9bd327f3-bbee-4de9-b83d-3be02849e58f" />
+
+
 ## Result
+Thus,the Python program to create and display a DataFrame with Custom Index Labels is created successfully.
