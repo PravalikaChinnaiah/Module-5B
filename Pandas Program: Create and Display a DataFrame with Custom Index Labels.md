@@ -20,20 +20,25 @@ To create and display a **DataFrame** using the **Pandas** library in Python fro
 Add code here
 ~~~
 import pandas as pd
-data1 = pd.DataFrame(eval(input()))
-data2 = pd.DataFrame(eval(input()))
-print("Original DataFrames:")
-print(data1)
-print("-------------------------------------")
-print(data2)
-result=pd.concat([data1,data2],axis=0)
-print("\nJoin the said two dataframes along rows:")
-print(result)
+import numpy as np
+
+exam_data = {
+    'name': ['Anastasia', 'Dima', 'Katherine', 'James', 'Emily'],
+    'score': [12.5, 9.0, 16.5, np.nan, 9.0],
+    'attempts': [1, 3, 2, 3, 2],
+    'qualify': ['yes', 'no', 'yes', 'no', 'no']
+}
+
+labels = ['a', 'b', 'c', 'd', 'e']
+
+df = pd.DataFrame(exam_data, index=labels)
+print(df)
 ~~~
 
 ## Output
 
-<img width="1193" height="812" alt="image" src="https://github.com/user-attachments/assets/9bd327f3-bbee-4de9-b83d-3be02849e58f" />
+<img width="1171" height="653" alt="image" src="https://github.com/user-attachments/assets/b2fc19c3-1851-4194-8c8b-c748b09476f5" />
+
 
 
 ## Result
