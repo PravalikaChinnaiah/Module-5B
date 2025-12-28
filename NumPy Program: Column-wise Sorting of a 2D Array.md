@@ -36,6 +36,7 @@ print(sorted_array)
 ~~~
 
 ## Output
+<img width="835" height="587" alt="image" src="https://github.com/user-attachments/assets/e24d5518-07f3-43e9-b526-32c45202f08c" />
 
 ## Result
 Thus,the Python program that sorts the elements in each column of a given 2D array in ascending order is created successfully.
